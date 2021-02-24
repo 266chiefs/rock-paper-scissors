@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color:red;
+    font-family: 'Press Start 2P', cursive;
+    /*border: 10px solid;*/
+}
+
+button {
+    border: 20px red solid;
+    border-width: 1vh;
+    width: 300px;
+    height: 100px;
+    background: none;
+    color: red;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    margin: 150px; 
+    font-size: 50px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro h2 {
+    height: 100px;
+}
+
+.intro button {
+    margin-top: 50px;
+}
+
+.match {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 75%;
+    left: 50%;
+}
+
+.scores {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.scores p {
+    font-size: 30px;
+    padding: 30px;
+    text-align: center;
+  }
+
+.hands {
+    display: flex;
+    flex-direction: rows;
+    justify-content: space-around;
+    flex-basis: 300px;
+}
+
+.player-hand, .computer-hand{
+    width: 300px;
+  }
+
+.player-hand {
+    transform: rotate(90deg);
+}
+
+.computer-hand{
+    transform: scaleX(-1) rotate(90deg);
+}
+
+.choices {
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    display:flex;
+    justify-content: space-around;
+}
+
+.choices button {
+    margin: 20px;
+    /*width: 250px;*/
+}
+
+div.fadeOut {
+    opacity: 0;
+    pointer-events: none;
+}
+
+div.fadeIn {
+    opacity: 1;
+    pointer-events: all;
+}

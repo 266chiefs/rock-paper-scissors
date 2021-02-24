@@ -1,31 +1,45 @@
 <head>
-    <meta charset="utf-8">>
-    <title> Sore Loser Rock, Paper, Scissors </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" media="all">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title> RPS FINAL BOSS </title>
+    <audio controls autopla>
+        <source src="dragonforce.mp3" type="audio/mpeg">
+    </audio>
 </head>
 <body>
 
-<script>
+<h1> RPS FINAL BOSS </h1>
 
-const myArray = ["rock", "paper", "scissors"];
-const playerSelection = "rock";
-const computerSelection = computerPlay();
-console.log(playRound(playerSelection, computerSelection));
+<div class="intro">
+    <h2>I WILL DESTROY YOU!</h2>
+    <button>NEVER!</button>
+</div>
 
+<div class="match fadeOut">
+<div class="scores">
+    <div class="player-score">
+        <h2>Your Score</h2>
+        <p>0</p>
+    </div> 
+    <div class="computer-score">
+        <h2>Boss Score</h2>
+        <p>0</p>
+    </div>
+</div>
 
-function computerPlay() {
-  return myArray[Math.floor(Math.random()*myArray.length)];
-}
+<div class="hands">
+    <img class="player-hand" src="./scissors.png" alt+"">
+    <img class="computer-hand" src="./paper.png" alt+"">
+</div>
 
-function playRound(playerSelection, computerSelection) {
-    console.log(playerSelection)
-    console.log(computerSelection)
-    if (computerSelection === playerSelection) {
-    console.log("tied");
- } else if (computerSelection != playerSelection){
-     console.log("unlucky");
-}
-}
+<div class="choices">
+    <button>rock</button>
+    <button>paper</button>
+    <button>scissors</button>
+</div>
+</div>
 
-
-</script>
-</body>
+<script src="app.js"></script>
+</body> 
+</html> 
