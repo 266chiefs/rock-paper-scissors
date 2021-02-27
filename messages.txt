@@ -1,0 +1,64 @@
+intro-messages:
+
+"GET OVER HERE!" (mk)
+"It's meat puppet master theatre!" 
+-"message 3"
+-"message 4"
+-"message 5"
+-"message 6"
+-"message 7"
+-"message 8"
+-"message 9"
+-"message 10"
+
+computer-wins-round:
+
+"We all make mistakes from time to time, and you made one just now." (hades)
+-"message 3"
+-"message 4"
+-"message 5"
+-"message 6"
+-"message 7"
+-"message 8"
+-"message 9"
+-"message 10"
+
+player-wins-round:
+
+-"message 1"
+-"message 2"
+-"message 3"
+-"message 4"
+-"message 5"
+-"message 6"
+-"message 7"
+-"message 8"
+-"message 9"
+-"message 10"
+
+computer-wins-match:
+
+"Little advice: win before you fight.- Sun Tzu" (reddit)
+"Don’t improvise what you cannot handle." (madara)
+"GIT GUD" (hollow knight)
+"I am inevitable" (thanos)
+"I'll be back" (terminator)
+"Only I have the brains to rule Lylat!" (starfox64)
+"Your time is done, primates!" baldur's gate
+-"message 8"
+-"message 9"
+-"message 10"
+
+
+player-wins-match:
+
+-"message 1"
+-"message 2"
+-"message 3"
+-"message 4"
+-"message 5"
+-"message 6"
+-"message 7"
+-"message 8"
+-"message 9"
+-"message 10"

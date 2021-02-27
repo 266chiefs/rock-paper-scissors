@@ -3,17 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+controls {
+    opacity: 0;
+}
 
 body {
     color:red;
     font-family: 'Press Start 2P', cursive;
-    /*border: 10px solid;*/
+    overflow-y: hidden;
+    border: 10px solid;
 }
 
 button {
     border: 20px red solid;
     border-width: 1vh;
-    width: 300px;
+    width: 250px;
     height: 100px;
     background: none;
     color: red;
@@ -25,8 +29,8 @@ button {
 
 h1 {
     text-align: center;
-    margin: 150px; 
-    font-size: 50px;
+    margin: 125px; 
+    font-size: 75px;
 }
 
 .intro {
@@ -47,7 +51,7 @@ h1 {
 .match {
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 75%;
+    top: 60%;
     left: 50%;
 }
 
@@ -86,7 +90,7 @@ h1 {
 .options {
     display: flex;
     margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 0px;
     display:flex;
     justify-content: space-around;
 }

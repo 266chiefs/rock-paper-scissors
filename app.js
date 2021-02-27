@@ -2,7 +2,7 @@ const game = () => {
     let pScore = 0;
     let cScore = 0;
 
-    //start game
+    //start game fade in / fade out
     const startGame = () => {
         const playButton = document.querySelector(".intro button");
         const introScreen = document.querySelector(".intro");
@@ -13,7 +13,8 @@ const game = () => {
             match.classList.add("fadeIn");
         });
     };
-    //play match
+
+    //play match 
     const playMatch = () => {
         const options = document.querySelectorAll(".options button");
         const playerHand = document.querySelector(".player-hand");
@@ -27,7 +28,7 @@ const game = () => {
                 const computerNumber = Math.floor(Math.random() * 3);
                 const computerChoice = computerOptions[computerNumber];
 
-            //calling compare hands
+            //calling compare hands function
             compareHands(this.textContent, computerChoice)
             
             //updating images
