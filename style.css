@@ -83,7 +83,7 @@ h1 {
     transform: scaleX(-1) rotate(90deg);
 }
 
-.choices {
+.options {
     display: flex;
     margin-bottom: 50px;
     margin-top: 50px;
@@ -91,7 +91,7 @@ h1 {
     justify-content: space-around;
 }
 
-.choices button {
+.options button {
     margin: 20px;
     /*width: 250px;*/
 }
