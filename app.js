@@ -38,6 +38,86 @@ const game = () => {
         });
     }; 
 
+    const introUpdateMessage = () => {
+        const message = document.querySelector(".intro h2");
+        const messageOptions = [
+            "It's meat puppet master theatre!", 
+            "Holy sh*T where are we!?", 
+            "GET OVER HERE",
+            "intro m4",
+            "intro m5",
+            "m6",
+            "m7",
+            "m8",
+            "m9",
+            "m10",
+        ];
+        const messageNumber = Math.floor(Math.random() * 10);
+        const messageChoice = messageOptions[messageNumber];
+
+        message.textContent = messageChoice;
+    }
+
+    const tieUpdateMessage = () => {
+        const message = document.querySelector(".message");
+        const messageOptions = [
+            "NO WAY", 
+            "you fool", 
+            "you suck",
+            "you lucky fuck",
+            "WHAT",
+            "YOU ARE JOKING",
+            "eh hello?",
+            "huh",
+            "i mean wtf",
+            "HELLLLOOO",
+        ];
+        const messageNumber = Math.floor(Math.random() * 10);
+        const messageChoice = messageOptions[messageNumber];
+
+        message.textContent = messageChoice;
+    }
+
+    const computerWinsMessage = () => {
+        const message = document.querySelector(".message");
+        const messageOptions = [
+            "We all make mistakes from time to time, and you made one just now.", 
+            "brrrrrrr", 
+            "brrrrrrr",
+            "brrrrrrr",
+            "brrrrrrr",
+            "brrrrrrr",
+            "brrrrrrr",
+            "brrrrrrr",
+            "brrrrrrr",
+            "brrrrrrr",
+        ];
+        const messageNumber = Math.floor(Math.random() * 10);
+        const messageChoice = messageOptions[messageNumber];
+
+        message.textContent = messageChoice;
+    }
+
+    const playerWinsMessage = () => {
+        const message = document.querySelector(".message");
+        const messageOptions = [
+            "You should've aimed for the head",
+            "skrrrrrrr", 
+            "skrrrrrrr",
+            "skrrrrrrr",
+            "skrrrrrrr",
+            "skrrrrrrr",
+            "skrrrrrrr",
+            "skrrrrrrr",
+            "skrrrrrrr",
+            "skrrrrrrr",
+        ];
+        const messageNumber = Math.floor(Math.random() * 10);
+        const messageChoice = messageOptions[messageNumber];
+
+        message.textContent = messageChoice;
+    }
+
     const updateScore = () => {
         const playerScore = document.querySelector (".player-score p");
         const computerScore = document.querySelector (".computer-score p");
@@ -49,30 +129,35 @@ const game = () => {
     const compareHands = (playerChoice, computerChoice) => {
         const message = document.querySelector(".message")
          if(playerChoice === computerChoice){
-            message.textContent = "tie";
+            tieUpdateMessage()
+            //message.textContent = "tie";
             return;
         }
         if(playerChoice === "rock"){
             if(computerChoice === "scissors"){
-                message.textContent = "you win";
+                //message.textContent = "you win";
+                playerWinsMessage();
                 pScore++;
                 updateScore();
                 return;
             }else{
-                message.textContent = "boss wins";
+                //message.textContent = "boss wins";
+                computerWinsMessage();
                 cScore++;
                 updateScore();
                 return;
             }
         }
         if(playerChoice === "paper"){
-            if(computerChoice === "scissors"){
-                message.textContent = "you win";
+            if(computerChoice === "rock"){
+                //message.textContent = "you win";
+                playerWinsMessage();
                 pScore++;
                 updateScore();
                 return;
             }else{
-                message.textContent = "boss wins";
+                //message.textContent = "boss wins";
+                computerWinsMessage();
                 cScore++;
                 updateScore();
                 return;
@@ -80,20 +165,24 @@ const game = () => {
         }
         if(playerChoice === "scissors"){
             if(computerChoice === "paper"){
-                message.textContent = "you win";
+                //message.textContent = "you win";
+                playerWinsMessage();
                 pScore++;
                 updateScore();
                 return;
             }else{
-                message.textContent = "boss wins";
+                //message.textContent = "boss wins";
+                computerWinsMessage();
                 cScore++;
                 updateScore();
                 return;
             };
-        };
-    }
+        };    
+    } 
+    introUpdateMessage();
     startGame();
     playMatch();
+
 };
 game();
 

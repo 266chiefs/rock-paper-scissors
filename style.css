@@ -12,10 +12,11 @@ body {
     font-family: 'Press Start 2P', cursive;
     overflow-y: hidden;
     border: 10px solid;
+    background-color:rgba(240, 232, 167, 0.753);
 }
 
 button {
-    border: 20px red solid;
+    border: 20px rgb(255, 0, 0) solid;
     border-width: 1vh;
     width: 250px;
     height: 100px;
@@ -56,15 +57,27 @@ h1 {
 }
 
 .scores {
-    margin-top: 100px;
+    margin-top: 150px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
+.message {
+    margin-top: 50, 50, 50, 50;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.message h2 {
+    font-size: 15px;
+}
+
 .scores p {
     font-size: 30px;
-    padding: 30px;
+    margin-top: 10px;
+    padding: 10px;
     text-align: center;
   }
 
